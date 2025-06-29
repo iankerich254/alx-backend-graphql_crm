@@ -1,5 +1,5 @@
 """
-URL configuration for graphql_crm project.
+URL configuration for alx_backend_graphql_crm project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -23,3 +23,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
 ]
+
